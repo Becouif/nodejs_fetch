@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
-
+import './app.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+ 
   const [commit, setCommit] = useState([])
 
   const commitUsers = async () => {
@@ -21,15 +21,17 @@ function App() {
 
   return (
     <div>
+    <h1 className="l1">List of Recent Commit Messages On NodeJS repository</h1>
    { commit.map((eachCommit) => {
       return (
-        <p>{eachCommit.commit.message}</p>
+        <ul>
+          <li className="l1">{eachCommit.commit.message} </li>
+        </ul>
+
+        
       )
     })}
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      
     </div>
   );
 }

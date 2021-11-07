@@ -1,0 +1,23 @@
+body {
+  background-color: #111;
+}
+
+
+
+li .li{
+ 
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+
+.h1 {
+  font-size: 50px;
+}
+.l1 {
+  color: white ;
+  text-align: center;
+  margin: 0 0 72px;
+  line-height: 32px;
+}
